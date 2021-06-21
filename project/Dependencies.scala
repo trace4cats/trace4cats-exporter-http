@@ -8,9 +8,15 @@ object Dependencies {
     val trace4cats = "0.12.0-RC1+156-7ea07b63"
 
     val http4s = "0.23.0-RC1"
+
+    val kindProjector = "0.13.0"
+    val betterMonadicFor = "0.3.1"
   }
 
   lazy val trace4catsKernel = "io.janstenpickle" %% "trace4cats-kernel" % Versions.trace4cats
 
   lazy val http4sClient = "org.http4s" %% "http4s-client" % Versions.http4s
+
+  lazy val kindProjector = ("org.typelevel" % "kind-projector"     % Versions.kindProjector).cross(CrossVersion.full)
+  lazy val betterMonadicFor = "com.olegpy" %% "better-monadic-for" % Versions.betterMonadicFor
 }
