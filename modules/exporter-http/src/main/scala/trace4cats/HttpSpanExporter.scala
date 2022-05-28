@@ -1,16 +1,16 @@
-package io.janstenpickle.trace4cats.`export`
+package trace4cats
 
 import cats.Applicative
 import cats.effect.Temporal
 import cats.syntax.flatMap._
 import cats.syntax.functor._
 import fs2.Stream
-import io.janstenpickle.trace4cats.kernel.SpanExporter
-import io.janstenpickle.trace4cats.model.Batch
 import org.http4s._
 import org.http4s.client.Client
 import org.http4s.client.dsl.Http4sClientDsl
 import org.http4s.headers.`Content-Type`
+import trace4cats.kernel.SpanExporter
+import trace4cats.model.Batch
 
 import scala.concurrent.duration._
 import scala.util.control.NoStackTrace
