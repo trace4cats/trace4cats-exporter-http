@@ -12,7 +12,7 @@ HTTP span exporter for [Trace4Cats].
 Add it to your `build.sbt`:
 
 ```scala
-"io.janstenpickle" %% "trace4cats-exporter-http" % "0.13.1"
+"io.janstenpickle" %% "trace4cats-exporter-http" % "0.14.0"
 ```
 
 ## Contributing
